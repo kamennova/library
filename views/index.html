@@ -1,3 +1,49 @@
-<%- include('templates/header.html'); -%>
-Books search
-<%- include('templates/footer.html'); -%>
+<div class="catalog-container">
+    <p class="catalog-title">Books catalog</p>
+    <p class="search-title">Search by</p>
+    <div class="search">
+        <input class="field search-field" type="text" id="bookTitle" placeholder="Book title">
+        <input class="field search-field" type="text" id="authorName" placeholder="Author name">
+        <input class="button search-button" type="button" value="Go">
+    </div>
+    <hr color="lightgrey" size="1px">
+    <div class="catalog-books">
+
+        <div class="book">
+            <div class="book-info">
+                <div class="book-info-title">
+                    <span class="book-title-text">Pride & Prejudice</span>
+                </div>
+                <div class="book-info-publishing">
+                    <span class="book-info-author">Jane Austin </span>
+                    <span class="book-info-publisher">| Oxford Publishing, 2019</span>
+                </div>
+            </div>
+            <div class="book-status">
+                <span class="book-status-text">AVAILABLE</span>
+            </div>
+            <div class="book-button">
+                <input class="button book-info-button" type="button" value="Reserve for me">
+            </div>
+        </div>
+
+        <div class="book">
+            <div class="book-info">
+                <div class="book-info-title">
+                    <span class="book-title-text">Clean Code</span>
+                </div>
+                <div class="book-info-publishing">
+                    <span class="book-info-author">Robert Martin </span>
+                    <span class="book-info-publisher">| Oxford Publishing, 2019</span>
+                </div>
+            </div>
+            <div class="book-status">
+                <span class="book-status-text">BORROWED</span>
+            </div>
+            <div class="book-button">
+                <input class="button book-info-button" type="button" value="Join queue">
+            </div>
+        </div>
+
+    </div>
+</div>
