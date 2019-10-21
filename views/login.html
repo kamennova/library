@@ -1,0 +1,20 @@
+<%- include('templates/guestHeader.html'); -%>
+<div class="login-container">
+    <div class="login-title">
+        <p class="login-text">Log in</p>
+    </div>
+    <div class="username-field">
+        <input class="field" type="text" name="username" id="username-text" placeholder="Record book №">
+    </div>
+    <div class="password-field">
+        <input class="field" type="password" name="password" id="password-text" placeholder="Password">
+    </div>
+    <div class="login-submit">
+        <input class="button submitButton" type="submit" id="login-submitButton" value="Submit">
+    </div>
+    <div class="noaccount-login">
+        <p class="noaccount-text">Don`t have an account?
+            <a href="signup.html" class="noaccount-signup">Sign up</a></p>
+    </div>
+</div>
+<%- include('templates/footer.html'); -%>

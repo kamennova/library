@@ -1,10 +1,205 @@
-body {
-    margin: 0;
+.login-container{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
 }
 
-.main-header {
-    margin-bottom: 20px;
-    padding: 15px 0;
+.field{
+    border-radius: 5px;
+    border: solid gray 1px;
+    margin: 4px;
+}
 
-    border-bottom: 1px solid lightgray;
+::placeholder{
+    padding-left: 5px;
+    font-size: 13px;
+    color: darkgray;
+}
+
+.button{
+    border:solid gray 1px;
+    border-radius: 5px;
+}
+
+.submitButton{
+    margin: 7px;
+    width: 70px;
+}
+
+.noaccount-text{
+    margin: 0px;
+    font-size: 10px;
+}
+
+.haveAccount-text{
+    margin: 0px;
+    font-size: 10px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header-logo{
+    margin-right: 5px;
+    color: darkred;
+}
+
+.header-link{
+    margin-left: 15px;
+    font-size: 11px;
+    text-decoration: none;
+    color: slategray;
+    text-decoration: underline;
+}
+
+.header-button{
+    font-size: 9px;
+    color: grey;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.search-field{
+    margin: 0px;
+    font-size: 10px;
+}
+.search-field::placeholder{
+    padding-left: 5px;
+    font-size: 10px;
+    color: darkgray;
+}
+
+.search-button{
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.search-title{
+    font-size: 10px;
+    color: grey;
+    margin: 1px;
+}
+
+.book-title-text{
+    font-size: 12px;
+}
+
+.book-info-author{
+    font-size: 7px;
+}
+
+.book-info-publisher{
+    font-size: 7px;
+    color: grey;
+}
+
+.book-info-title{
+    margin-bottom: -8px;
+}
+
+.book{
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-status-text{
+    font-size: 8px;
+    color: gray;
+}
+
+.book-info-button{
+    font-size: 10px;
+    
+}
+
+.profile-title{
+    margin-bottom: 0px;
+}
+
+.profile-name{
+    margin-top: 0px;
+    font-size: 11px;
+    color: gray;
+}
+
+.notifications-title{
+    font-size: 13px;
+}
+
+.notification-overdue{
+    font-size: 8px;
+    color: red;
+    border: solid red 1px;
+    padding: 5px;
+    background-color: #fce7e7;
+    border-radius: 5px;
+}
+
+.notification-queue{
+    font-size: 8px;
+    color: #649d46;
+    border: solid #649d46 1px;
+    padding: 5px;
+    background-color: #eff5ec;
+    border-radius: 5px;
+}
+
+.nonotif{
+    font-size: 9px;
+    color: grey;
+}
+
+.records-title{
+    font-size: 13px;
+}
+
+.records{
+    width: 100%;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+tr{
+    border-bottom:solid darkgrey 0.5px;
+}
+
+thead th {
+    font-size: 8px;
+    color: darkgrey;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+th#theadBookName{
+    width: 40%;
+}
+
+tbody th{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 8px ;
+    text-align: left;
+    font-weight: normal;
+}
+
+.thInfo{
+    text-align: center;
+}
+
+.status-archived{
+    background-color: greenyellow;
+}
+
+.status-open{
+    background-color: #478ef1;
+}
+
+.status-overdue{
+    background-color: #ec5d26;
 }
