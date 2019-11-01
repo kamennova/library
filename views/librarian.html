@@ -1,0 +1,24 @@
+<%- include('templates/userHeader.html'); -%>
+
+<div class="container profile-container">
+    <h1 class="page-title">Librarian Interface</h1>
+    <p class="profile-name"><%= librarian.username %></p>
+
+    <h2>Loan book</h2>
+    <form class="book-loan-form" method="post">
+        <input class="field search-field" name="username" type="text" id="username" placeholder="Group №" required>
+        <input class="field search-field" type="text" name="bookId" id="bookId" placeholder="Book id" required>
+        <input class="button search-button" type="submit" value="Loan">
+    </form>
+
+    <h2>Add book</h2>
+    <form class="book-loan-form" method="post">
+        <input class="field search-field" name="title" type="text" id="title" placeholder="Book title" required>
+        <input class="field search-field" type="text" name="author" id="author" placeholder="Book author" required>
+        <input class="field search-field" type="text" name="publishHouse" id="publishHouse" placeholder="Publishing house" required>
+        <input class="field search-field" type="text" name="edition" id="edition" placeholder="Edition" required>
+        <input class="button search-button" type="submit" value="Add new book">
+    </form>
+</div>
+
+<%- include('templates/footer.html'); -%>

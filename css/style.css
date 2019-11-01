@@ -1,205 +1,259 @@
-.login-container{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 50px;
+.container {
+    width: 980px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-.field{
+.page-title, .section-title {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+}
+
+.page-title {
+    font-size: 24px;
+}
+
+.section-title {
+    font-size: 20px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.login-container {
+    width: 370px;
+    max-width: 100%;
+    margin: 50px auto 0;
+
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.field {
+    padding: 6px 10px 5px;
+
     border-radius: 5px;
     border: solid gray 1px;
     margin: 4px;
 }
 
-::placeholder{
-    padding-left: 5px;
-    font-size: 13px;
+::placeholder {
+    font-size: 15px;
     color: darkgray;
 }
 
-.button{
-    border:solid gray 1px;
+.button {
+    padding: 6px 10px 5px;
+
+    font-size: 15px;
+
+    border: solid gray 1px;
     border-radius: 5px;
 }
 
-.submitButton{
+.button:hover {
+    cursor: pointer;
+}
+
+.submitButton {
     margin: 7px;
-    width: 70px;
 }
 
-.noaccount-text{
+.noaccount-text {
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+
+.haveAccount-text {
     margin: 0px;
-    font-size: 10px;
+    font-size: 12px;
 }
 
-.haveAccount-text{
-    margin: 0px;
-    font-size: 10px;
-}
-
-.header{
+.header {
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
+    padding: 10px 15px;
 }
 
-.header-logo{
+.header-logo {
     margin-right: 5px;
     color: darkred;
 }
 
-.header-link{
+.header-link {
     margin-left: 15px;
-    font-size: 11px;
-    text-decoration: none;
+    font-size: 15px;
     color: slategray;
     text-decoration: underline;
 }
 
-.header-button{
-    font-size: 9px;
+.header-button {
+    font-size: 15px;
     color: grey;
-    padding-left: 10px;
-    padding-right: 10px;
+
+    padding-top: 5px;
 }
 
-.search-field{
+.search-field {
     margin: 0px;
-    font-size: 10px;
+    padding: 6px 10px 5px;
+
+    font-size: 16px;
 }
-.search-field::placeholder{
-    padding-left: 5px;
-    font-size: 10px;
+
+.search-field::placeholder {
     color: darkgray;
 }
 
-.search-button{
-    font-size: 10px;
+.search-button {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.search-title{
-    font-size: 10px;
+.search-title {
+    font-size: 14px;
     color: grey;
     margin: 1px;
 }
 
-.book-title-text{
-    font-size: 12px;
+/*---*/
+
+.catalog-books {
+    padding-left: 0;
 }
 
-.book-info-author{
-    font-size: 7px;
+.catalog-books .book {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.book-info-publisher{
-    font-size: 7px;
+.book-title-text {
+    margin-top: 0;
+    margin-bottom: 13px;
+
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.book-info-author, .book-info-publisher {
+    font-size: 15px;
+}
+
+.book-info-publisher {
     color: grey;
 }
 
-.book-info-title{
+.book-info-title {
     margin-bottom: -8px;
 }
 
-.book{
-    display: flex;
-    justify-content: space-between;
-}
-
-.book-status-text{
-    font-size: 8px;
+.book-status-text {
+    font-size: 12px;
     color: gray;
 }
 
-.book-info-button{
-    font-size: 10px;
-    
+.book-info-button {
+    font-size: 14px;
 }
 
-.profile-title{
+.profile-title {
     margin-bottom: 0px;
 }
 
-.profile-name{
-    margin-top: 0px;
-    font-size: 11px;
+.profile-name {
+    margin-top: -10px;
+    font-size: 14px;
     color: gray;
 }
 
-.notifications-title{
+.notification {
+    display: inline-block;
+    margin: 0 auto 20px;
+    padding: 7px 15px;
+
+    font-size: 13px;
+
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+.notifications-title {
     font-size: 13px;
 }
 
-.notification-overdue{
-    font-size: 8px;
+.notification-overdue, .notification-error, .notification.negative {
     color: red;
-    border: solid red 1px;
-    padding: 5px;
+    border-color: red;
     background-color: #fce7e7;
-    border-radius: 5px;
 }
 
-.notification-queue{
-    font-size: 8px;
+.notification.positive, .notification-success {
     color: #649d46;
-    border: solid #649d46 1px;
-    padding: 5px;
+    border-color: #649d46;
     background-color: #eff5ec;
-    border-radius: 5px;
 }
 
-.nonotif{
-    font-size: 9px;
+.nonotif, .no-results {
+    font-size: 15px;
+    font-family: Arial, sans-serif;
     color: grey;
 }
 
-.records-title{
-    font-size: 13px;
-}
-
-.records{
+.records {
     width: 100%;
 }
 
-table{
+table {
     border-collapse: collapse;
 }
 
-tr{
-    border-bottom:solid darkgrey 0.5px;
+tr {
+    border-bottom: solid lightgrey 1px;
 }
 
 thead th {
-    font-size: 8px;
+    font-size: 13px;
+    font-family: sans-serif;
     color: darkgrey;
     text-align: left;
     padding-bottom: 5px;
 }
 
-th#theadBookName{
+th#theadBookName {
     width: 40%;
 }
 
-tbody th{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 8px ;
+tbody th {
+    padding: 9px 0;
+    font-size: 15px;
     text-align: left;
     font-weight: normal;
 }
 
-.thInfo{
+.thInfo {
     text-align: center;
 }
 
-.status-archived{
+.loanRecord th:first-of-type {
+    font-size: 16px;
+}
+
+.status {
+    text-transform: capitalize;
+}
+
+.status-archived {
     background-color: greenyellow;
 }
 
-.status-open{
+.status-open {
     background-color: #478ef1;
 }
 
-.status-overdue{
+.status-overdue {
     background-color: #ec5d26;
 }

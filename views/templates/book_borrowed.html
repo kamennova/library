@@ -1,0 +1,17 @@
+<li class="book">
+    <div class="book-info">
+        <div class="book-info-title">
+            <h2 class="book-title-text"><%= book.title %></h2>
+        </div>
+        <div class="book-info-publishing">
+            <span class="book-info-author"><%= book.authorName %> </span>
+            <span class="book-info-publisher">| <%= book.publishingHouse %>, <%= book.edition %></span>
+        </div>
+    </div>
+    <div class="book-status">
+        <span class="book-status-text">BORROWED</span>
+    </div>
+    <div class="book-button">
+        <input class="button queue-btn book-info-button" type="button" value="Join queue">
+    </div>
+</li>

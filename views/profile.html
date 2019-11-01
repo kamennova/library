@@ -1,45 +1,61 @@
-<%- include('templates/guestHeader.html'); -%>
-<div class="profile-container">
-    <p class="profile-title">My Profile</p>
-    <p class="profile-name">ip1212</p>
-    <p class="notifications-title">My notifications</p>
+<%- include('templates/userHeader.html'); -%>
+
+<div class="container profile-container">
+    <h1 class="page-title">My Profile</h1>
+    <p class="profile-name"><%= reader.username %></p>
+    <h2 class="section-title">My notifications</h2>
     <div class="notifications">
-        <p class="notification-overdue">Your loan for "Harry Potter & the Goblet of Fire" is overdue. Please return
-            the book ASAP</p>
-        <p class="notification-queue">You've come to the top of the queue to loan "Clean Code". Your reservation
-            will be valid for 24h</p>
+        <% if(notifications.length > 0) { %>
+
+        <% notifications.forEach(function(n) { %>
+
+        <p class="notification <%= n.getType() %>">
+            <%= n.message %>
+        </p>
+
+        <% }); %>
+
+        <% } else { %>
+
         <p class="nonotif">No active notifications</p>
+
+        <% } %>
     </div>
-    <p class="records-title">My loan records</p>
+    <p class="section-title records-title">My loan records</p>
+
+    <% if(loanRecords.length > 0) { %>
+
     <table class="records">
         <thead>
-            <tr>
-                <th id="theadBookName">Book name</th>
-                <th class="thInfo">Loaned on</th>
-                <th class="thInfo">Returned on</th>
-                <th class="thInfo">Status</th>
-            </tr>
+        <tr>
+            <th id="theadBookName">Book name</th>
+            <th class="thInfo">Loaned on</th>
+            <th class="thInfo">Returned on</th>
+            <th class="thInfo">Status</th>
+        </tr>
         </thead>
         <tbody>
-            <tr class="loanRecord">
-                <th>Howl's Moving Castle</th>
-                <th class="thInfo">02/11/18</th>
-                <th class="thInfo">22/11/18</th>
-                <th class="thInfo status-archived">Archived</th>
-            </tr>
-            <tr class="loanRecord">
-                <th>Pride & Prejudice</th>
-                <th class="thInfo">24/03/2018</th>
-                <th class="thInfo">-</th>
-                <th class="thInfo status-open">Open</th>
-            </tr>
-            <tr class="loanRecord">
-                <th>Harry Potter & the Goblet of Fire</th>
-                <th class="thInfo">24/12/2018</th>
-                <th class="thInfo">-</th>
-                <th class="thInfo status-overdue">Overdue</th>
-            </tr>
+
+        <% loanRecords.forEach(function(record) { %>
+
+        <tr class="loanRecord">
+            <th><%= record.book().title %></th>
+            <th class="thInfo"><%= record.loanDate %></th>
+            <th class="thInfo"><%= record.isArchived() ? record.returnDate : '-' %></th>
+            <th class="thInfo status-<%= record.status() %>"><span><%= record.status() %></span></th>
+        </tr>
+
+        <% }); %>
+
         </tbody>
     </table>
+
+    <% } else { %>
+
+    <p class="nonotif">No loan records yet</p>
+
+    <% } %>
+
 </div>
+
 <%- include('templates/footer.html'); -%>

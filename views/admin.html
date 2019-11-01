@@ -1,0 +1,22 @@
+<%- include('templates/userHeader.html'); -%>
+
+<div class="container profile-container">
+    <h1 class="page-title">Admin Interface</h1>
+    <p class="profile-name"><%= admin.username %></p>
+
+    <h2>Add librarian</h2>
+    <form class="book-loan-form" method="post">
+        <input class="field search-field" name="username" type="text" id="username" placeholder="Username" required>
+        <input class="field search-field" type="text" name="pass" id="pass" placeholder="Pass" required>
+        <input class="button search-button" type="submit" value="Create">
+    </form>
+
+    <h2>Delete librarian</h2>
+    <form class="book-loan-form" method="post">
+        <input class="field search-field" name="delUsername" type="text" id="delUsername" placeholder="Username"
+               required>
+        <input class="button search-button" type="submit" value="Delete">
+    </form>
+</div>
+
+<%- include('templates/footer.html'); -%>

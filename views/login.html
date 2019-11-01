@@ -1,20 +1,27 @@
 <%- include('templates/guestHeader.html'); -%>
+
 <div class="login-container">
-    <div class="login-title">
-        <p class="login-text">Log in</p>
-    </div>
-    <div class="username-field">
-        <input class="field" type="text" name="username" id="username-text" placeholder="Record book №">
-    </div>
-    <div class="password-field">
-        <input class="field" type="password" name="password" id="password-text" placeholder="Password">
-    </div>
-    <div class="login-submit">
-        <input class="button submitButton" type="submit" id="login-submitButton" value="Submit">
-    </div>
-    <div class="noaccount-login">
-        <p class="noaccount-text">Don`t have an account?
-            <a href="signup.html" class="noaccount-signup">Sign up</a></p>
-    </div>
+    <%- (typeof justSignedUp !== 'undefined' && justSignedUp) ? include('templates/signup_success.html', {groupNo: groupNo}) : '' -%>
+    <%- (typeof err !== 'undefined' && err !== '') ? include('templates/login_error.html', {err: err}) : '' -%>
+
+    <form class="login-form" method="post">
+
+        <div class="page-title centered">
+            <p class="login-text">Log in</p>
+        </div>
+        <div class="username-field">
+            <input class="field" type="text" name="username" id="username-text" placeholder="Username">
+        </div>
+        <div class="password-field">
+            <input class="field" type="password" name="password" id="password-text" placeholder="Password">
+        </div>
+        <div class="login-submit">
+            <input class="button submitButton" type="submit" id="login-submitButton" value="Submit">
+        </div>
+        <div class="noaccount-login">
+            <p class="noaccount-text">Don`t have an account?
+                <a href="/signup" class="noaccount-signup">Sign up</a></p>
+        </div>
+    </form>
 </div>
 <%- include('templates/footer.html'); -%>

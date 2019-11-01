@@ -1,0 +1,42 @@
+1|Pride & Prejudice|Jane Austin|Oxford Publishing House|2019|0|1|0
+2|Holy Bible|-|Cambridge Publishing House|2010|1|2|3
+3|Howl's Moving Castle|Diane Vinn Johns|Oxford Publishing House|2019|1|2|1
+4|Clean Code|Robert Martin|Cambridge Publishing House|2019|0|3|2
+5|To kill a mockingbird|Jane Austin|Oxford Publishing House|2019|0|4|1
+6|Harry Potter and the Order of the Phoenix|J.K. Rowling|Cambridge Publishing House|2004|1|3|2
+7|The Hunger Games|Suzanne Collins|Oxford Publishing House|2006|2|1|4
+8|Harry Potter and the Sorcerer's Stone|J.K. Rowling|Cambridge Publishing House|1997|3|4|5
+9|Eragon|Christopher Paolini|Hachette Book Group|1998|1|0|2
+10|The Chronicles of Narnia|C.S. Lewis|Oxford Publishing House|1995|2|1|3
+11|The Fault in Our Stars|John Green|Hachette Book Group|2008|0|4|5
+12|Romeo and Juliet|William Shakespeare|1999|1|0|5
+13|The Alchemist|Paulo Coelho|Cambridge Publishing House|2000|0|1|3
+14|The Little Prince|Antoine de Saint-Exupery|Oxford Publishing House|2001|3|4|5
+15|Wind, Sand and Stars|Antoine de Saint-Exupery|Oxford Publishing House|2004|5|1|2
+16|El Principito|Antoine de Saint-Exupery|Oxford Publishing House|2002|1|1|2
+17|The Princess Bride|William Goldman|Penguin Random House|2007|3|0|1
+18|Marathon Man|William Goldman|Penguin Random House|2009|2|1|5
+19|The Temple of Gold|William Goldman|Penguin Random House|2018|6|2|0
+20|A Game of Thrones|George R.R. Martin|Cambridge Publishing House|2002|1|2|4
+21|A Clash of Kings|George R.R. Martin|Cambridge Publishing House|2004|0|5|1
+22|A Storm of Swords|George R.R. Martin|Cambridge Publishing House|2005|1|2|1
+23|A Feast for Crows|George R.R. Martin|Cambridge Publishing House|2007|5|0|2
+24|A Dance with Dragons|George R.R. Martin|Cambridge Publishing House|2009|2|1|3
+25|The Odyssey|Homer|Penguin Random House|2002|0|2|3
+26|The Iliad|Homer|Penguin Random House|2004|0|0|0
+27|The Shining|Stephen King|Oxford Publishing House|2010|0|4|1
+28|The Stand|Stephen King|Oxford Publishing House|2014|6|0|2
+29|Misery|Stephen King|Oxford Publishing House|2017|2|6|1
+30|It|Stephen King|Oxford Publishing House|2018|0|6|1
+31|The Green Mile|Stephen King|Oxford Publishing House|2012|3|1|5
+32|Harry Potter and the Sorcerer's Stone|J.K. Rowling|Cambridge Publishing House|2001|6|2|4
+33|Harry Potter and the Chamber of Secrets|J.K. Rowling|Cambridge Publishing House|2004|0|0|0
+34|Harry Potter and the Goblet of Fire|J.K. Rowling|Cambridge Publishing House|2008|0|5|0
+35|Harry Potter and the Half-Blood Prince|J.K. Rowling|Cambridge Publishing House|2010|6|6|1
+36|Title|Author|2019|Publish house
+37|fff|auth|2019|fff
+38|dd|dd|2019|dd|0|0|0
+39|title|author|2019|ff|0|0|0
+40|title|author|2019|ff|0|0|0
+41|book titkehor|author|2019|gg|0|0|0
+42|Title|Author|ppppppp|Publish house|0|0|0
